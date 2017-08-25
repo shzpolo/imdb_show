@@ -1,0 +1,33 @@
+extends layout
+
+block links
+    link(rel='stylesheet', href='public/stylesheets/explore_style.css')
+
+block content
+
+    div#container
+        div#header
+            h1.text-center #{title}
+                small #{' '}Welcome to #{title}
+        div#main.container
+            div#btns.row
+                div.col-md-1.controlBtn
+                    input#crawlOne.btn-default.btn(type="button", value="crawl first")
+                div.col-md-1.controlBtn
+                    input#getImage.btn-primary.btn(type="button", value="get image")
+                div.col-md-1.controlBtn
+                    input#getImage2.btn-primary.btn(type="button", value="get image")
+            div#content.row
+                div#show.italic.col-md-8
+                    p#query Welcome
+                    table#resultTable.table.table-hover.table-bordered
+                        tr#tableHead
+                            td #title
+                            td stars
+                            td type
+                img#poster.img-responsive.img-thumbnail
+
+            script(type="text/javascript" src="public/javascripts/exploreInput.js")
+
+
+

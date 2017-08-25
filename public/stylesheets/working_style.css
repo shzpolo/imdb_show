@@ -1,0 +1,16 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+#main{
+    height: 800px;
+}
+#player{
+    background: lightcyan;
+    padding: 5px;
+}

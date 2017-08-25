@@ -1,0 +1,68 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: linear-gradient(white,#666666);
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.italic{
+    font-style: italic;
+}
+#header{
+    height: 90px;
+    background: linear-gradient(lightcyan,lightyellow);
+}
+#imdbLogo{
+    padding:10px;
+}
+#logo{
+    width: 200px;
+    height: 90px;
+}
+#Logo{
+    height: 100%;
+}
+#searchContent{
+    width: 500px;
+}
+#searchBar{
+    padding-top:25px;
+}
+#headerSide{
+    padding-top:20px;
+}
+#home{
+    display: block;
+    margin-bottom: 5px;
+}
+.searchBar{
+    padding: 5px;
+}
+#searchMethod{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#searchButton{
+    background: darkblue;
+    font-weight: bold;
+    color: white;
+}
+.as-block{
+    display: block;
+    margin: 5px;
+}
+.videoDemo{
+    padding: 5px;
+    background: blanchedalmond;
+}
+.videoImg{
+    height: 220px;
+}
+.videoDes{
+    margin-top: 10px;
+    height: 40px;
+}

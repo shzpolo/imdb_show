@@ -1,0 +1,44 @@
+extends layout
+
+block links
+    link(rel='stylesheet', href='public/stylesheets/index_style.css')
+
+
+block content
+    div#container.container
+        div#Navi.row
+            div#imdbLogo.col-xs-2.navElem
+                img#logo(src="public/images/imdb.png")
+            div#searchDiv.col-xs-8.navElem
+                form#searchBar.form-inline
+                    div.form-group
+                        labal#indexWords(for="searchInput") Movie Title
+                        input#searchInput.form-control(type="text" placeholder="Enter a movie name")
+                    button.btn.btn-default(type="submit") Search
+            div.col-xs-2.navElem
+                a(href="/explore") Explore more movie
+        div#picShow.row
+            div.examplePic.col-xs-4
+                img.poster(src="public/images/1.jpg" alt="poster")
+            div.examplePic.col-xs-4
+                img.poster(src="public/images/2.jpg" alt="poster")
+            div.examplePic.col-xs-4
+                img.poster(src="public/images/3.jpg" alt="poster")
+        div#content.container.row
+            p#guide.text-center.bg-info(pages=pages) Please push the movie you like to get more information.
+            table#resultTable.row.text-center.table.table-hover.table-bordered
+                tr#tableHead
+                    td title
+                    td stars
+                    td type
+                    td year
+            div#pageBtns.row
+                div#prev.col-xs-2.page
+                    a#prevA.page_a
+                        button.btn.btn-default.btn-block prev
+                div#next.col-xs-2.page
+                    a#nextA.page_a
+                        button.btn.btn-primary.btn-block next
+
+    script(type="text/javascript" src="public/javascripts/indexInput.js")
+

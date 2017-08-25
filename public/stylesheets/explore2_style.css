@@ -1,0 +1,88 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: linear-gradient(white,#666666);
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.italic{
+    font-style: italic;
+}
+#header{
+    height: 90px;
+    background: linear-gradient(#ccc,lightblue);
+}
+#imdbLogo{
+    padding:10px;
+}
+#logo{
+    width: 150px;
+    height:70px;
+}
+#Loge{
+    padding: 10px;
+}
+#searchContent{
+    width: 500px;
+}
+#searchBar{
+    padding-top:25px;
+}
+#headerSide{
+    padding-top:10px;
+}
+#home{
+    display: block;
+    margin-bottom: 5px;
+}
+.searchBar{
+    padding: 5px;
+}
+#searchMethod{
+    font-size: 17px;
+    font-weight: bold;
+}
+#searchButton{
+    background: darkblue;
+    font-weight: bold;
+    color: white;
+}
+#content{
+    min-height: 400px;
+    background: #00B7FF;
+}
+#resultBlock{
+    padding: 20px;
+}
+#newsBlock{
+    background: seashell;
+    padding: 20px;
+}
+#topLinePic{
+    width: 100%;
+    padding: 15px;
+    max-height: 350px;
+}
+#topLineTitle{
+    font-weight: bold;
+    font-size: 25px;
+    word-wrap:break-word;
+    word-break:normal;
+}
+#topLine{
+    margin-bottom: 20px;
+}
+.newsLine{
+    font-size: 15px;
+    line-height:30px
+}
+#resultTable{
+    background: lightcyan;
+}
+#firstHead{
+    font-size: 20px;
+    font-weight: bold;
+}

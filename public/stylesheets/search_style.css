@@ -1,0 +1,125 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: linear-gradient(white,#666666);
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.italic{
+    font-style: italic;
+}
+#header{
+    height: 90px;
+    background: linear-gradient(#ccc, lightgreen);
+}
+#imdbLogo{
+    padding:10px;
+}
+#logo{
+    width: 150px;
+    height:70px;
+}
+#Loge{
+    padding: 10px;
+}
+#searchContent{
+    width: 500px;
+}
+#searchBar{
+    padding-top:25px;
+}
+#toExplore{
+    padding-top:40px;
+}
+.searchBar{
+    padding: 5px;
+}
+#searchMethod{
+    font-size: 17px;
+    font-weight: bold;
+}
+#searchButton{
+    background: green;
+    font-weight: bold;
+    color: white;
+}
+#infoBlock{
+    background: #7cc02b;
+    min-height: 300px;
+    padding: 20px;
+}
+#castBlock{
+    background: whitesmoke;
+    min-height: 300px;
+    padding: 30px;
+}
+#imdbLink{
+    background: linear-gradient(#111, #777);
+    min-height: 100px;
+    color: white;
+}
+.link{
+    height:49px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+#apple{
+    background-image: url('../images/navbar.png');
+    background-position-y: -606px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#google{
+    background-image: url('../images/navbar.png');
+    background-position-y: -652px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#amazon{
+    background-image: url('../images/navbar.png');
+    background-position-y: -701px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#imdb{
+    width: 150px;
+    height:45px;
+}
+.linkCover{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    padding-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#starArea{
+    padding-top: 10px;
+    background: #7cc02b;
+}
+#starImage{
+    height:80px;
+}
+#starAmount{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#poster{
+    width: 100%;
+    height: 390px;
+}
+#infoDiv{
+    margin-top: 30px;
+}
+#tableHead{
+    font-size: 20px;
+    font-weight: bold;
+}

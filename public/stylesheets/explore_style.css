@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/bg-explore.jpg');
+  background-size: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.italic{
+  font-style: italic;
+}
+
+#container{
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+#header{
+  height: 80px;
+}
+
+#main{
+  min-height: 500px;
+  background: white;
+  padding-bottom: 20px;
+}
+
+#show{
+  color: red;
+  background-image: url(../images/showbar.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 15px
+}
+
+#query{
+  margin-top: 20px;
+}
+#resultTable{
+  background: gainsboro;
+  color: black;
+  opacity:0.95;
+}
+
+#tableHead{
+    font-weight:bold;
+    font-style: normal;
+}
+#btns{
+  margin: 20px 0;
+}
+.controlBtn{
+  padding: 2px;
+}
+#content{
+  margin: 0;
+}
+#poster{
+  margin-left: 30px;
+}

@@ -1,0 +1,44 @@
+extends layout
+
+block links
+    link(rel='stylesheet', href='public/stylesheets/explore2_style.css')
+
+block content
+    div#container.container
+        div#header.row.img-rounded
+            div#Loge.col-xs-2
+                img#logo(src="public/images/imdb.png")
+            div#searchBar.col-xs-8.row
+                div.col-xs-2.searchBar
+                    label.sr-only(for='searchMethod') searchMethod
+                    select#searchMethod.form-control.text-center
+                        option TITLE
+                        option IMDB ID
+                        option TYPE
+                        option YEAR
+                        option CAST
+                div.col-xs-8.searchBar
+                    label.sr-only(for='searchContent') searchContent
+                    input#searchContent.form-control(type='text' placeholder='Enter your content')
+                div.col-xs-2.searchBar
+                    button#searchButton.btn.btn-default.btn-block(type='submit') S e a r c h
+            div#headerSide.col-xs-2.text-center
+                a#home(href="/index") To Home
+                input#random.btn-primary.btn(type="button", value="Random One")
+
+        div#content.row.img-rounded
+            div#resultBlock.col-xs-7
+                p#query(name= name, keyword= keyword) Don't you want to search something?
+                table#resultTable.text-center.table.table-hover.table-bordered
+                    tr#firstHead
+                        td #title
+                        td stars
+                        td type
+            div#newsBlock.col-xs-5.img-thumbnail
+                div#topLine
+                    p#topLineTitle.text-center dadaddddddddddddddddddddddddddd
+                    img#topLinePic.text-center(src='public/images/Reading.png')
+                    a#topLineLink see more
+                div#newsDiv
+                    ul#newsUl(type='square')
+    script(type="text/javascript" src="public/javascripts/explore2Input.js")

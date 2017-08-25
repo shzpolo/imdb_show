@@ -1,0 +1,30 @@
+extends layout
+
+block links
+    link(rel='stylesheet', href='public/stylesheets/working_style.css')
+
+block content
+    div#container
+        div#player
+            //embed(src='http://player.youku.com/player.php/sid/XMjk1NzczNjc0NA==/v.swf'
+            //allowFullScreen='true' quality='high' width='480' height='400'
+            //align='middle' allowScriptAccess='always' type='application/x-shockwave-flash')
+            video(
+            id="7" preload="auto"
+            src="https://video-http.media-imdb.com/MV5BYmVmMGRmNzktYmFiMC00Z" +
+            "GYzLTg4YjMtZjc0NTQxYzI1NzFlXkExMV5BbXA0XkFpbWRiLWV0cy10cmFuc2NvZGU@." +
+            "mp4?Expires=1503459074&amp;Signature=Z8wKbT5Ssm1ZiqrmFr8lX4gGD~Eh4gf" +
+            "cVFBft9CIAsOhxDFCsMCIKFFLifpD-j-BjTK8OGtEiEpxWiGQKq3MDj-Huy~7oVa9IEN2W" +
+            "BZADs0os-kd-f~wY4BWkHJbN~2nyWEeWXJdZQCIQWzxqXKQ5NnZlrhVPwdMuJznC58CP" +
+            "-I_&amp;Key-Pair-Id=APKAILW5I44IHKUN2DYA")
+
+        div#main
+            h1 working for index
+            h3.bg-warning index coming soon
+            h3.bg-warning search coming soon
+            h3
+                a.bg-info(href='/explore') explore is usable.
+            h3
+                a.bg-info(href='/index') test index.
+            h3
+                a.bg-info(href='/search') test search.

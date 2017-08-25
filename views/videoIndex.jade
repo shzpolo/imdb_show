@@ -1,0 +1,49 @@
+extends layout
+
+block links
+    link(rel='stylesheet', href='public/stylesheets/video_index_style.css')
+
+block content
+    div#container.container
+        div#header.row.img-rounded
+            div#Loge.col-xs-2
+                a(href='/video')
+                    img#logo(src='public/images/shareweeLogo.png')
+            div#searchBar.col-xs-8.row
+                div.col-xs-2.searchBar.text-right
+                    div#searchMethod VideoTitle
+                div.col-xs-8.searchBar
+                    label.sr-only(for='searchContent') searchContent
+                    input#searchContent.form-control(type='text' placeholder='Enter your content')
+                div.col-xs-2.searchBar
+                    button#searchButton.btn.btn-default.btn-block(type='submit') S e a r c h
+            div#headerSide.col-xs-2.text-center
+                a#imdbHome.as-block(href="/index") To IMDb Home
+                a#videoHome.as-block(href="/videoIndex") To Video Home
+        div#content.row
+            div#d1.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d2.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d3.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d4.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d5.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d6.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d7.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+            div#d8.col-xs-3.videoDemo
+                div.videoImg
+                div.videoDes
+    script(type="text/javascript" src="public/javascripts/videoIndexInputInput.js")
+

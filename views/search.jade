@@ -1,0 +1,93 @@
+extends layout
+
+block links
+    link(rel='stylesheet', href='public/stylesheets/search_style.css')
+
+block content
+    div#container.container
+        div#header.row
+            div#Loge.col-xs-2
+                img#logo(src="public/images/imdb.png")
+            div#searchBar.col-xs-8.row
+                div.col-xs-2.searchBar
+                    label.sr-only(for='searchMethod') searchMethod
+                    select#searchMethod.form-control.text-center
+                        option TITLE
+                        option IMDB ID
+                        option TYPE
+                        option YEAR
+                div.col-xs-8.searchBar
+                    label.sr-only(for='searchContent') searchContent
+                    input#searchContent.form-control(type='text' placeholder='Enter your content')
+                div.col-xs-2.searchBar
+                    button#searchButton.btn.btn-default.btn-block(type='submit') S e a r c h
+            div#toExplore.col-xs-2
+                a(href="/explore") Explore more movie
+
+        div#infoBlock.row
+            div.col-xs-3
+                img#poster(alt='Poster Reading')
+            div#infoDiv.col-xs-9.row
+                div.col-xs-7
+                    div.info.row
+                        div.col-xs-4.text-right imdb_id:
+                        div#imdbId.col-xs-7.col-xs-offset-1= imdb_id
+                    div.info.row
+                        div.col-xs-4.text-right title:
+                        div#imdbTitle.col-xs-7.col-xs-offset-1
+                    div.info.row
+                        div.col-xs-4.text-right type:
+                        div#imdbType.col-xs-7.col-xs-offset-1
+                    div.info.row
+                        div.col-xs-4.text-right rate:
+                        div#imdbRate.col-xs-7.col-xs-offset-1
+                    div.info.row
+                        div.col-xs-4.text-right language:
+                        div#imdbLanguage.col-xs-7.col-xs-offset-1
+                    div.info.row
+                        div.col-xs-4.text-right runtime:
+                        div#imdbRuntime.col-xs-7.col-xs-offset-1
+                    div.info.row
+                        div.col-xs-4.text-right year:
+                        div#imdbYear.col-xs-7.col-xs-offset-1
+                div#starArea.col-xs-5.row
+                    div.col-xs-5
+                        img#starImage(src='public/images/star.png')
+                    div#starAmount.col-xs-7 0.0
+
+        div#castBlock.row
+            h3 Cast
+            table#castTable.text-center.table.table-hover.table-bordered.table-striped
+                tr#tableHead
+                    td #
+                    td Name
+        div#imdbLink.row
+            h3.text-center I M D b
+            div.col-xs-2
+                a.linkCover(href='http://www.imdb.com/')
+                    img#imdb.link(src="public/images/imdb.png")
+
+
+            div.col-xs-2
+                a.linkCover(href='https://itunes.apple.com/app/imdb-movies-tv/id342792525')
+                    div#apple.link
+
+
+            div.col-xs-2
+                a.linkCover(href='https://market.android.com/details?id=com.imdb.mobile')
+                    div#google.link
+
+
+            div.col-xs-2
+                a.linkCover(href='https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW/?amp&amp&amp&amp&amp' +
+                '&amp&amp&ref=mas_ba_imdb_dp&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=right-1&pf_rd_r=0H6RNAMSQ70FM7A' +
+                'TR0WN&pf_rd_t=101&pf_rd_p=1290998462&pf_rd_i=2350149011&ref_=imdbref_ft_app_amazon&' +
+                'tag=imdb-fire-housead-20')
+                    div#amazon.link
+            div#commercial.col-xs-4
+                p Find showtimes, watch trailers, browse photos, track your Watchlist and rate your favorite movies and TV shows on your phone or tablet!
+
+
+    script(type="text/javascript" src="public/javascripts/searchInput.js")
+
+

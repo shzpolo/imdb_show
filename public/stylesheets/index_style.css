@@ -1,0 +1,85 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: linear-gradient(white,#666666);
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.italic{
+    font-style: italic;
+}
+
+#Navi{
+    height:90px;
+    background: linear-gradient(black,#ccc);
+}
+#picShow{
+    height: 500px;
+}
+.examplePic{
+    padding: 5px;
+}
+#content{
+    min-height:300px;
+}
+#indexWords{
+    font-weight: bold;
+    color:white;
+}
+#searchInput{
+    width: 500px;
+}
+.navElem{
+    padding: 20px;
+}
+#imdbLogo{
+    padding:10px;
+}
+#logo{
+    width: 150px;
+    height:70px;
+}
+#picShow{
+    background: #777;
+    height: 580px;
+}
+.examplePic{
+    padding: 10px;
+}
+.poster{
+    height: 560px;
+    width: 380px;
+}
+#content{
+    width: 1200px;
+    min-height: 800px;
+    background: linear-gradient(white,#cccccc);
+    padding: 30px;
+}
+#resultTable{
+    width: 1100px;
+    margin: 0;
+    background: white;
+}
+#pageBtns{
+    width: 1100px;
+    margin: 0;
+}
+#tableHead{
+    font-size: 20px;
+    font-weight: bold;
+}
+.page{
+    padding: 10px;
+}
+#guide{
+    font-family: "lucida grande", "Lucida Console", lucida, sans-serif;
+    font-size: 15px;
+    color: #999999;
+}
+.dotDiv{
+    font-size: 20px;
+}
